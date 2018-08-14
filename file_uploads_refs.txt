@@ -1,0 +1,49 @@
+0102
+  - Examining the $_FILES array
+    - Error Codes
+      Value         Meaning
+        0             No Error //Uploaded Successfully
+        1             Exceeds upload_max_filesize in PHP configurations
+        2             Exceeds MAX_FILE_SIZE in hidden form field
+        3             Only partially uploaded
+        4             No file uploaded // Files not selected for  uploading
+        6             No temporary upload folder
+        7             Failed to write to disk
+        8             A PHP extension prevented the upload
+
+0103
+  - Setting the maximum file size
+    -
+
+0105
+  - Moving the file to its destination
+
+0106
+  - Limitations on file uploads
+    - Individually Configurable Settings
+
+      Directive               Default         Role
+
+      max_file_uploads        20              num of files at a time
+      upload_max_filesize     2MB             Limit size of a file
+      post_max_size           8MB             Limits total acceptable POST data
+      max_input_time          60 sec          Limits time for receiving form input
+      max_execution_time      30 sec          Limits how long a script can run
+      memory_limit            128 MB          Limits the mrmory a script can use
+
+    - Resetting in .htaccess   // Works only in apache servers
+      - php_value upload_max_filesize 4194304  // in bytes
+      - php_value post_max_size 16777216
+
+    - Resetting in .user.ini
+      - upload_max_filesize=4M
+      - post_max_size=16M
+
+0201
+  - Planning the class's features
+
+0202
+  - Creating and using a namespaced class
+
+0301
+  -
