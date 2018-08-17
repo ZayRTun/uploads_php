@@ -6,10 +6,11 @@
   $result = [];
   if (isset($_POST['upload'])) {
       require_once 'src/foundationphp/UploadFile.php';
-      $destination = __DIR__ . '/images';
+      $destination = __DIR__ . '/uploaded';
       try {
         $upload = new UploadFile($destination);
         $upload->setMaxSize($max);
+        $upload->allowAllTypes();
         $upload->upload();
         $result = $upload->getMessages();
       } catch (Exception $e) {

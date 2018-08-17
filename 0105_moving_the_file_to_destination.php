@@ -3,7 +3,7 @@
   $message = '';
   if (isset($_POST['upload'])) {
 
-    $destination = __DIR__ . '/images/';
+    $destination = __DIR__ . '/uploaded/';
 
     if ($_FILES['filename']['error'] == 0) {
       $result = move_uploaded_file($_FILES['filename']['tmp_name'], $destination . $_FILES['filename']['name']);

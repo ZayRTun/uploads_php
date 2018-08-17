@@ -46,4 +46,25 @@
   - Creating and using a namespaced class
 
 0301
-  -
+  - Restricting acceptable MIME types
+
+0302
+  - Removing spaces from file names
+
+0303
+  - Restricting acceptable file-name extensions
+
+0304
+  - Neutralizing potentially dangerous uploads
+
+0305
+  - Renaming files with duplicate names
+
+0306
+  - Moving the file to its destination
+
+0401
+  - Understanding how the $_FILES array handles multiple files
+
+0402
+  - Adapting the class to handle both single and multiple uploads
